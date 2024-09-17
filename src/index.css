@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles nếu cần */
+body {
+  @apply bg-gray-100 text-gray-900;
+  font-family: 'Inter', sans-serif; /* Đặt font mặc định nếu cần */
+}
+
+/* Ví dụ: Tạo các class tùy chỉnh nếu cần */
+.custom-btn {
+  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+}
+
+.custom-input {
+  @apply border-2 border-gray-300 rounded-md p-2 w-full;
+}
+
+.custom-form {
+  @apply flex flex-col space-y-4;
+}
+
+/* Responsive utilities (nếu bạn cần tùy chỉnh thêm) */
+@media (min-width: 768px) {
+  .form-container {
+    @apply w-1/2 mx-auto;
+  }
+}
